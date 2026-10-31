@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anjali ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #190019, #4b003b, #800040);
+    color: white;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* PASSWORD SCREEN */
+#lockScreen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#lockScreen h1 {
+    color: #ffb6d5;
+    font-size: 36px;
+    margin: 20px;
+}
+
+#lockScreen input {
+    width: 230px;
+    padding: 14px;
+    border: 2px solid pink;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+}
+
+#lockScreen button {
+    background: #ff4f91;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#error {
+    color: #ffc1da;
+    margin: 15px;
+}
+
+/* BIRTHDAY WEBSITE */
+#mainWebsite {
+    display: none;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #ffb6d5;
+    margin: 20px;
+    text-shadow: 0 0 20px #ff1493;
+}
+
+h2 {
+    color: #ffb6d5;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+button {
+    background: #ff4f91;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.letter {
+    max-width: 750px;
+    margin: auto;
+    background: rgba(255,255,255,0.10);
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 2;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid pink;
+}
+
+footer {
+    padding: 30px;
+    color: pink;
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .gallery img {
+        width: 90%;
+        max-width: 280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD LOCK -->
+<div id="lockScreen">
+    <div style="font-size:70px;">🌹</div>
+    <h1>A Special Surprise For You ❤️</h1>
+    <p>Someone has prepared something special for you...</p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Secret Password"
+    >
+
+    <button onclick="unlockWebsite()">
+        Unlock My Surprise ❤️
+    </button>
+
+    <p id="error"></p>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="mainWebsite">
+
+<div class="hero">
+    <h1>Happy Birthday Anjali ❤️</h1>
+    <h2>My Special Person 🥰</h2>
+
+    <p>
+        Today is not just your birthday,
+        it's a special day for someone
+        who makes life beautiful.
+    </p>
+
+    <button onclick="showSurprise()">
+        Open Your Surprise 🎁
+    </button>
+
+    <p id="surprise"></p>
+</div>
+
+<section>
+    <h2>A Letter For You 💌</h2>
+    <div class="letter">
+        <p>
+        Dear Anjali ❤️
+        <br><br>
+        Happy Birthday to the most special person!
+        I don't know how to express all my feelings
+        in words, but I want you to know that
+        you are a beautiful memory in my life.
+        May your life always be full of happiness,
+        love, success and beautiful moments.
+        Keep smiling, keep shining and always
+        be happy.
+        <br><br>
+        With lots of love ❤️
+        <br>
+        Yours Always
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Our Beautiful Memories 📸</h2>
+    <p>Some moments are too special to forget ❤️</p>
+
+    <div class="gallery">
+        <img src="anjaliji0002.jpg" alt="Memory 1">
+        <img src="anjaliji0003.jpg" alt="Memory 2">
+        <img src="anjaliji0001.jpg" alt="Memory 3">
+    </div>
+</section>
+
+<section>
+    <h2>My Wishes For You 🌹</h2>
+
+    <div class="letter">
+        <p>
+        ❤️ May you always smile.<br>
+        🌸 May all your dreams come true.<br>
+        🥰 May happiness follow you everywhere.<br>
+        💖 May your life be filled with love.<br>
+        🎂 Have the most beautiful birthday!
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>❤️ कुछ खास बातें तुम्हारे लिए ❤️</h2>
+
+    <div class="letter">
+        <h2>Happy Birthday Anjali 🎂</h2>
+
+        <p>
+            आज के दिन फूल भी मुस्कुरा उठे,
+            क्योंकि तुम इस दुनिया में आई हो। 🌹
+        </p>
+
+        <p>
+            आज के दिन रोशनी भी थोड़ी ज्यादा प्यारी लगती है,
+            क्योंकि आज तुम्हारा जन्मदिन है। ✨
+        </p>
+
+        <p>
+            तुम्हारी हर सुबह खूबसूरत हो,
+            तुम्हारी हर शाम खुशियों से भरी हो। ❤️
+        </p>
+
+        <p>
+            तुम्हारे सारे सपने पूरे हों,
+            और तुम्हारे चेहरे की मुस्कान कभी कम न हो। 🥰
+        </p>
+
+        <p>
+            जिंदगी तुम्हें हर वो खुशी दे,
+            जिसकी तुमने कभी ख्वाहिश की हो।
+        </p>
+
+        <h2>Happy Birthday Anjali ❤️</h2>
+        <p>ढेर सारी शुभकामनाओं के साथ ❤️</p>
+    </div>
+</section>
+
+<footer>
+    Made With ❤️ Just For Anjali
+    <br><br>
+    Forever Special 🌹
+</footer>
+
+</div>
+
+<script>
+function unlockWebsite() {
+    const password = document.getElementById("password").value;
+
+    if (password === "time158") {
+        document.getElementById("lockScreen").style.display = "none";
+        document.getElementById("mainWebsite").style.display = "block";
+    } else {
+        document.getElementById("error").innerText =
+            "Wrong Password! Please Try Again ❤️";
+    }
+}
+
+function showSurprise() {
+    document.getElementById("surprise").innerHTML =
+        "You are truly special! Happy Birthday Anjali! ❤️🎂🌹";
+}
+</script>
+
+</body>
+</html>
